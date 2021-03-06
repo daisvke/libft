@@ -1,12 +1,32 @@
+================atoi
+
+#include <stdio.h>
+#include <stdlib.h>
+
 int	main(int argc, char *argv[])
 {
 	if (argc == 2)
-		printf("%ld", ft_strlen(argv[1]));
+	{
+		printf("\natoi\t: %d\n", atoi(argv[1]));
+		printf("ft_atoi\t: %d\n", ft_atoi(argv[1]));
+	}
 	printf("\n");
 	return (0);
 }
 
-==================
+==================isalnum
+
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	if (argc == 2)
+		printf("%d", ft_isalnum(argv[1][0]));
+	printf("\n");
+	return (0);
+}
+
+==================isalpha
 
 #include <stdio.h>
 
@@ -18,43 +38,7 @@ int	main(int argc, char *argv[])
 	return (0);
 }
 
-==================
-
-#include <stdio.h>
-
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-		printf("%d", ft_isdigit(argv[1][0]));
-	printf("\n");
-	return (0);
-}
-
-==================
-
-#include <stdio.h>
-
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-		printf("%d", ft_isalnum(argv[1][0]));
-	printf("\n");
-	return (0);
-}
-
-==================
-
-#include <stdio.h>
-
-int	main(int argc, char *argv[])
-{
-	if (argc == 2)
-		printf("%d", ft_isalnum(argv[1][0]));
-	printf("\n");
-	return (0);
-}
-
-==================
+==================isascii
 
 #include <stdio.h>
 
@@ -66,19 +50,54 @@ int	main(int argc, char *argv[])
 	return (0);
 }
 
-==================
+==================isdigit
 
 #include <stdio.h>
 
 int	main(int argc, char *argv[])
 {
 	if (argc == 2)
-		printf("%d", ft_toupper(argv[1][0]));
+		printf("%d", ft_isdigit(argv[1][0]));
 	printf("\n");
 	return (0);
 }
 
-==================
+==================strchr
+
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	if (argc == 3)
+		printf("%s", ft_strchr(argv[1], argv[2][0]));
+	printf("\n");
+	return (0);
+}
+
+=================strlen
+
+int	main(int argc, char *argv[])
+{
+	if (argc == 2)
+		printf("%ld", ft_strlen(argv[1]));
+	printf("\n");
+	return (0);
+}
+
+==================strrchr
+
+
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	if (argc == 3)
+		printf("%s", ft_strrchr(argv[1], argv[2][0]));
+	printf("\n");
+	return (0);
+}
+
+==================tolower
 
 #include <stdio.h>
 
@@ -90,3 +109,14 @@ int	main(int argc, char *argv[])
 	return (0);
 }
 
+==================toupper
+
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	if (argc == 2)
+		printf("%d", ft_toupper(argv[1][0]));
+	printf("\n");
+	return (0);
+}
