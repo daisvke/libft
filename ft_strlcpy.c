@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/06 21:19:42 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/07 00:05:08 by dtanigaw         ###   ########.fr       */
+/*   Created: 2021/03/07 15:54:20 by dtanigaw          #+#    #+#             */
+/*   Updated: 2021/03/07 16:58:31 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
-char	*ft_strchr(const char *s, int c)
+size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	while (*s)
-	{
-		if (*s == (char)c)
-			return ((char *)s);
-		s++;
-	}
-	if (!(char)c)
-		if (!*s)
-			return ((char *)s);
-	return (0);
+	size_t	i;
+		
+	
+	return (ft_strlen(src));
 }
