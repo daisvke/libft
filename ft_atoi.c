@@ -2,9 +2,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int		sign;
-	int		s_count;
-	long	res;
+	int				sign;
+	int				s_count;
+	unsigned long	res;
 
 	while (ft_isws(*str))
 		str++;
@@ -24,6 +24,13 @@ int	ft_atoi(const char *str)
 	{
 		res = res * 10 + *str - 48;
 		str++;
+	}
+	if (res > 9223372036854775807)
+	{
+		if (sign == 1)
+			return (-1);
+		if (sign == -1)
+			return (0);
 	}
 	return (res * sign);
 }
