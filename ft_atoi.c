@@ -2,9 +2,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	sign;
-	int	s_count;
-	int	res;
+	int		sign;
+	int		s_count;
+	long	res;
 
 	while (ft_isws(*str))
 		str++;

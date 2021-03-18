@@ -6,11 +6,9 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 21:19:42 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/07 00:05:08 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/16 14:43:37 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -21,7 +19,6 @@ char	*ft_strchr(const char *s, int c)
 		s++;
 	}
 	if (!(char)c)
-		if (!*s)
 			return ((char *)s);
 	return (0);
 }
