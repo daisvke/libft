@@ -295,6 +295,19 @@ int	main(int argc, char *argv[])
 	return (0);
 }
 
+==================strtrim
+
+// ex:       ./a.out "  \t \t \n   \n\n\n\t" " \n\t" | cat -e
+#include <stdio.h>
+
+int	main(int argc, char *argv[])
+{
+	if (argc == 3)
+		printf("%s", ft_strtrim(argv[1], argv[2]));
+	printf("\n");
+	return (0);
+}
+
 ==================tolower
 
 #include <stdio.h>
