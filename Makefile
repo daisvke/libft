@@ -14,6 +14,7 @@ SRC		= ft_atoi.c \
 			ft_isprint.c \
 			ft_isws.c \
 			ft_itoa.c \
+			ft_lstrmdata.c \
 			ft_memccpy.c \
 			ft_memchr.c \
 			ft_memcmp.c \
@@ -42,24 +43,38 @@ SRC		= ft_atoi.c \
 			ft_toupper.c \
 			ft_wc.c
 OBJ		= $(SRC:.c=.o)
+BSRC	= ft_lstadd_back.c \
+			ft_lstadd_front.c \
+			ft_lstclear.c \
+			ft_lstdelone.c \
+			ft_lstiter.c \
+			ft_lstmap.c \
+			ft_lstlast.c \
+			ft_lstnew.c \
+			ft_lstsize.c
+BOBJ	= $(BSRC:.c=.o)
 RM		= rm -f
 
-all: $(EXEC)
+all: $(EXEC) bonus
 
 $(EXEC): $(OBJ)
 	$(CC) $(CFLAGS) -c $(SRC) libft.h
-	$(LIB) $(EXEC) $(OBJ)
+	$(LIB) $(EXEC) $(OBJ) libft.h
+
+bonus: $(BOBJ)
+	$(CC) $(CFLAGS) -c $(BSRC) libft.h
+	$(LIB) $(EXEC) $(BOBJ)
 
 so:
-	$(SOCC) -fPIC $(CFLAGS) $(SRC)
-	gcc -shared -o libft.so $(OBJ)
+	$(SOCC) -fPIC $(CFLAGS) $(SRC) $(BSRC)
+	gcc -shared -o libft.so $(OBJ) $(BOBJ)
 
 clean: 
-	$(RM) $(OBJ)
+	$(RM) $(OBJ) $(BOBJ)
 
 fclean: clean
 	$(RM) $(EXEC)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus so clean fclean re

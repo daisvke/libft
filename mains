@@ -116,6 +116,100 @@ int main(int ac, const char *av[])
 	return 0;
 }
 
+=================lstadd_front
+
+#include <stdio.h>
+
+int	main(void)
+{
+	t_list	*l = malloc(sizeof(*l));
+	t_list	*l2 = malloc(sizeof(*l2));
+	t_list	*l3 = malloc(sizeof(*l3));
+	t_list	*new = malloc(sizeof(*new));
+
+	l->next = l2;
+	l->content = "first";
+	l2->next = l3;
+	l2->content = "second";
+	l3->next = 0;
+	l3->content = "third";
+
+	ft_lstadd_front(&l, new);
+	printf("%s", (char *)new->next->content);
+	return (0);
+}
+
+=================lstclear
+
+// test with l only: if not segfault => secured
+// but even if segfault, ok for libft-unit-test)
+#include <stdio.h>
+
+void	del(void *data)
+{
+	data = malloc(sizeof(*data));
+}
+
+int		main(void)
+{
+	t_list	*l = malloc(sizeof(*l));/*
+	t_list	*l2 = malloc(sizeof(*l2));
+	t_list	*l3 = malloc(sizeof(*l3));*/
+
+	l->next = 0;
+	l->content = "first";/*
+	l2->next = l3;
+	l2->content = "second";
+	l3->next = 0;
+	l3->content = "third";*/
+
+	ft_lstclear(&l, del);
+	printf("%s", (char *)l->content);
+	return (0);
+}
+
+=================lstlast
+
+#include <stdio.h>
+
+int	main(void)
+{
+	t_list	*l = malloc(sizeof(*l));
+	t_list	*l2 = malloc(sizeof(*l2));
+	t_list	*l3 = 0;
+
+	l->next = l2;
+	l->content = "first";
+	l2->next = l3;
+	l2->content = "second";
+	l3->next = 0;
+	l3->content = "last";
+
+	printf("%s", (char *)ft_lstlast(l)->content);
+	return (0);
+}
+
+=================lstsize
+
+#include <stdio.h>
+
+int	main(void)
+{
+	t_list	*l = malloc(sizeof(*l));
+	t_list	*l2 = malloc(sizeof(*l2));
+	t_list	*l3 = malloc(sizeof(*l3));
+
+	l->next = l2;
+	l->content = "first";
+	l2->next = l3;
+	l2->content = "second";
+	l3->next = 0;
+	l3->content = "third";
+
+	printf("%d", ft_lstsize(l));
+	return (0);
+}
+
 ==================memccpy
 
 #include <stdio.h>
