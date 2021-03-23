@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 17:41:27 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/23 20:33:31 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 20:42:21 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (malloc(sizeof(*split)));
-	split = malloc(sizeof(*split) * (ft_wc((char *)s, c) + 1));	
+	split = malloc(sizeof(*split) * (ft_wc((char *)s, c) + 1));
 	if (!split)
 		return (0);
 	i = 0;
