@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/21 23:31:14 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/23 17:36:54 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 20:16:18 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,7 @@ int		main(void)
 	l3->content = &n3;
 
 	t_list	*new;
-	new = ft_lstmap(l, ft_change, ft_lstrmdata);
+	new = ft_lstmap(l, ft_change, free);
 	
 	/*int		nn = 4;
 	new->content = &nn;
@@ -89,7 +89,7 @@ int		main(void)
 	printf("%d", *((int *)(new->next->content)));*/
 	
 	printf("new-content: %d\n", *((int *)(new->content)));
-	ft_lstclear(&l, ft_lstrmdata);
-	ft_lstclear(&new, ft_lstrmdata);
+	ft_lstclear(&l, free);
+	ft_lstclear(&new, free);
 	return (0);
 }

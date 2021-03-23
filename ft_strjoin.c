@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 01:34:49 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/19 02:17:51 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 20:19:24 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s1 || !s2)
 		return (malloc(sizeof(*joined)));
 	len = ft_strlen(s1) + ft_strlen(s2);
-	joined = malloc((len + 1) * sizeof(*joined));
+	joined = malloc(sizeof(*joined) * (len + 1));
 	if (!joined)
 		return (0);
 	ft_memcpy(joined, s1, ft_strlen(s1));
