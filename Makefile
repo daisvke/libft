@@ -14,7 +14,6 @@ SRC		= ft_atoi.c \
 			ft_isprint.c \
 			ft_isws.c \
 			ft_itoa.c \
-			ft_lstrmdata.c \
 			ft_memccpy.c \
 			ft_memchr.c \
 			ft_memcmp.c \
@@ -65,9 +64,9 @@ bonus: $(BOBJ)
 	$(CC) $(CFLAGS) -c $(BSRC) libft.h
 	$(LIB) $(EXEC) $(BOBJ)
 
-#	so:
-#	$(SOCC) -fPIC $(CFLAGS) $(SRC) $(BSRC)
-#	gcc -shared -o libft.so $(OBJ) $(BOBJ)
+so:
+	$(SOCC) -fPIC $(CFLAGS) $(SRC) $(BSRC)
+	gcc -shared -o libft.so $(OBJ) $(BOBJ)
 
 clean: 
 	$(RM) $(OBJ) $(BOBJ)

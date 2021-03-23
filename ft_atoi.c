@@ -1,4 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/03/23 19:45:47 by dtanigaw          #+#    #+#             */
+/*   Updated: 2021/03/23 19:59:06 by dtanigaw         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
+
+static int	ft_long_maxmin(int sign)
+{
+	if (sign == 1)
+		return (-1);
+	else
+		return (0);
+}
 
 int	ft_atoi(const char *str)
 {
@@ -12,25 +32,16 @@ int	ft_atoi(const char *str)
 	s_count = 0;
 	while (*str == '-' || *str == '+')
 	{
-		if (*str == '-')
+		if (*str++ == '-')
 			sign *= -1;
 		s_count++;
-		str++;
 	}
 	if (s_count > 1)
 		return (0);
 	res = 0;
 	while (ft_isdigit(*str))
-	{
-		res = res * 10 + *str - 48;
-		str++;
-	}
+		res = res * 10 + *str++ - 48;
 	if (res > 9223372036854775807)
-	{
-		if (sign == 1)
-			return (-1);
-		if (sign == -1)
-			return (0);
-	}
+		return (ft_long_maxmin(sign));
 	return (res * sign);
 }
