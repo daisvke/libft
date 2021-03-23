@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/21 23:31:14 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/23 15:12:15 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 17:36:54 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-		t_list	*first;
+	t_list	*first;
 	t_list	*elem;
 
 	if (lst)
@@ -41,7 +41,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 			printf("first-next-content (after): %d\n", *((int *)(first->next->content)));
 	return (first);
 }
-
 
 #include <stdio.h>
 

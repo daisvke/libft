@@ -65,9 +65,9 @@ bonus: $(BOBJ)
 	$(CC) $(CFLAGS) -c $(BSRC) libft.h
 	$(LIB) $(EXEC) $(BOBJ)
 
-so:
-	$(SOCC) -fPIC $(CFLAGS) $(SRC) $(BSRC)
-	gcc -shared -o libft.so $(OBJ) $(BOBJ)
+#	so:
+#	$(SOCC) -fPIC $(CFLAGS) $(SRC) $(BSRC)
+#	gcc -shared -o libft.so $(OBJ) $(BOBJ)
 
 clean: 
 	$(RM) $(OBJ) $(BOBJ)

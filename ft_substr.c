@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 01:09:08 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/19 01:27:18 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 18:24:05 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!p)
 		return (0);
 	i = 0;
-	while (len--)
+	while (s[start] && len--)
 	{
-		p[i] = s[start];
-		start++;
+		p[i] = s[start++];
 		i++;
 	}
 	p[i] = 0;
