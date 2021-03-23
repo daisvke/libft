@@ -6,13 +6,13 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/20 18:27:51 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/20 18:28:16 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 20:35:55 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_intlen(long n)
 {
-	int len;
+	int	len;
 
 	if (n == 0)
 		return (1);

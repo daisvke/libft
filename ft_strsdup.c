@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/20 01:24:18 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/20 01:26:15 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 20:35:24 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@ char	*ft_strsdup(char *src, int size)
 	int		i;
 	char	*dest;
 
-	if (!(dest = malloc((size + 1) * sizeof(char))))
+	dest = malloc(sizeof(char) * (size + 1));
+	if (!dest)
 		return (0);
 	i = 0;
 	while (i < size)
