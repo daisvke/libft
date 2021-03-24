@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/20 01:40:21 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/23 20:00:51 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/25 00:00:56 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_itoa(int n)
 
 	nb = n;
 	len = ft_intlen(nb);
-	res = (char *)malloc(len + 1 * sizeof(*res));
+	res = malloc(sizeof(*res) * (len + 1));
 	if (!res)
 		return (0);
 	res[len] = 0;

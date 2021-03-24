@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/18 21:32:51 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/18 22:37:14 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/23 22:32:15 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_calloc(size_t num, size_t size)
 {
 	void	*p;
 
-	p = (void *)malloc(num * size);
+	p = malloc(num * size);
 	if (!p)
 		return (NULL);
 	ft_bzero(p, num * size);
