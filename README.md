@@ -1,6 +1,6 @@
 # libft
 
-Libft is a set of functions including an implementation of some of the C standard library functions,<br />
+libft is a set of functions including an implementation of some of the C standard library functions,<br />
 personal functions, and some additional functions.<br />
 This was originally a 42 school project.
 
@@ -14,7 +14,7 @@ It has been validated by the following tests:
         <img src="/screenshots/libft-unit-test.png" width="48%" />
 </p>
 
-### Libc implementation
+### libc implementation
 
 * [ft_atoi](ft_atoi.c)
 * [ft_bzero](ft_bzero.c)
