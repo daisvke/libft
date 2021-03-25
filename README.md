@@ -8,7 +8,7 @@ It has been validated by the following tests:<br />
 * [libftTester](https://github.com/Tripouille/libftTester)
 * [norminette v.3](https://github.com/alexandregv/norminette-action)
 
-<p align="center">
+<p align="center" margin-bottom="2em">
         <img src="/screenshots/libfttester.png" width="48%" />
         <img src="/screenshots/libft-unit-test.png" width="48%" />
 </p>
