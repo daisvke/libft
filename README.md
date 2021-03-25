@@ -44,7 +44,7 @@ It has been validated by the following tests:
 * [ft_tolower](ft_tolower.c)
 * [ft_toupper](ft_toupper.c)
 
-### Other functions
+### Additional functions
 
 * [ft_itoa](ft_itoa.c)
 * [ft_putchar_fd](ft_putchar_fd.c)
@@ -66,6 +66,8 @@ It has been validated by the following tests:
 * [ft_lstmap](ft_lstmap.c)
 * [ft_lstnew](ft_lstnew.c)
 * [ft_lstsize](ft_lstsize.c)
+
+### Personal functions
 
 * [ft_intlen](ft_intlen.c)
 * [ft_isws](ft_isws.c)
