@@ -12,7 +12,7 @@ It passes the following tests with perfect results:
     <img src="/screenshots/libft-unit-test.png" width="48%" />
 </p>
 
-<div align="center">
+
     <p align="left">
 ### Libc functions
 
@@ -73,4 +73,4 @@ It passes the following tests with perfect results:
 * [ft_strsdup](ft_strsdup.c)
 * [ft_wc](ft_wc.c)
 </p>
-</div>
+
