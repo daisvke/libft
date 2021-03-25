@@ -6,10 +6,10 @@
     This was originally a 42 school project.
     <br />
     It has been validated by the following tests:
+</p>
     * [libft-unit-test](https://github.com/alelievr/libft-unit-test)
     * [libftTester](https://github.com/Tripouille/libftTester)
     * [norminette v.3](https://github.com/alexandregv/norminette-action)
-</p>
 
 <p align="center">
         <img src="/screenshots/libfttester.png" width="48%" />
