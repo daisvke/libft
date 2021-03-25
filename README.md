@@ -9,16 +9,16 @@ It has been validated by the following tests:
 * [libftTester](https://github.com/Tripouille/libftTester)
 * [norminette v.3](https://github.com/alexandregv/norminette-action)
 
-<p align="center">
-    <figure>
-        <img src="/screenshots/libfttester.png" width="48%" align="left" />
+<div align="center">
+    <figure align="left">
+        <img src="/screenshots/libfttester.png" width="48%" />
         <figcaption>libftTester</figcaption>
     </figure>
     <figure>
-        <img src="/screenshots/libft-unit-test.png" width="48%" align="left" />
+        <img src="/screenshots/libft-unit-test.png" width="48%" />
         <figcaption>libftTester</figcaption>
     </figure>
-</p>
+</div>
 
 ### Libc functions
 
