@@ -14,7 +14,7 @@ It passes the following tests with perfect results:
 
 ### Libc functions
 
-* [ft_memset](/libft/ft_memset.c)
+* [ft_memset](ft_memset.c)
 * [ft_bzero](/libft/ft_bzero.c)
 * [ft_memcpy](/libft/ft_memcpy.c)
 * [ft_memccpy](/libft/ft_memccpy.c)
