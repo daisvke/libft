@@ -56,7 +56,6 @@ It has been validated by the following tests:
 * [ft_strmapi](ft_strmapi.c)
 * [ft_strtrim](ft_strtrim.c)
 * [ft_substr](ft_substr.c)
-
 * [ft_lstadd_back](ft_lstadd_back.c)
 * [ft_lstadd_front](ft_lstadd_front.c)
 * [ft_lstclear](ft_lstclear.c)
