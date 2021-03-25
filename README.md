@@ -10,7 +10,7 @@ It has been validated by the following tests:
 * [norminette v.3](https://github.com/alexandregv/norminette-action)
 
 <p align="center">
-        <img src="/screenshots/libfttester.png" width="48%" align="left" />
+        <img src="/screenshots/libfttester.png" width="48%" />
         <img src="/screenshots/libft-unit-test.png" width="48%" />
 </p>
 
