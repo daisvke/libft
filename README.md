@@ -8,6 +8,6 @@ It passes the following tests with perfect results:
 [norminette v.3] (https://github.com/alexandregv/norminette-action)
 
 <p align="center">
-  <img src="/screenshots/libfttester.png" width="42%" align="left" />
-  <img src="/screenshots/libft-unit-test.png" width="42%" />
+  <img src="/screenshots/libfttester.png" width="48%" align="left" />
+  <img src="/screenshots/libft-unit-test.png" width="48%" />
 </p>
