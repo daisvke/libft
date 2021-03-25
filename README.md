@@ -12,6 +12,8 @@ It passes the following tests with perfect results:
     <img src="/screenshots/libft-unit-test.png" width="48%" />
 </p>
 
+<div align="center">
+    <p align="left">
 ### Libc functions
 
 * [ft_atoi](ft_atoi.c)
@@ -41,7 +43,8 @@ It passes the following tests with perfect results:
 * [ft_strrchr](ft_strrchr.c)
 * [ft_tolower](ft_tolower.c)
 * [ft_toupper](ft_toupper.c)
-
+</p>
+<p>
 ### Other functions
 
 * [ft_itoa](ft_itoa.c)
@@ -69,3 +72,5 @@ It passes the following tests with perfect results:
 * [ft_isws](ft_isws.c)
 * [ft_strsdup](ft_strsdup.c)
 * [ft_wc](ft_wc.c)
+</p>
+</div>
