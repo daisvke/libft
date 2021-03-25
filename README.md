@@ -18,6 +18,7 @@ It has been validated by the following tests:
         <img src="/screenshots/libft-unit-test.png" width="48%" align="left" />
         <figcaption>libftTester</figcaption>
     </figure>
+</p>
 
 ### Libc functions
 
