@@ -1,8 +1,10 @@
 # libft
 
-Libft is a set of implementations of some of the C standard library functions
+Libft is a set of functions including implementations of some of the C standard library functions,<br />
+personal functions, and some additional functions.<br />
+This was originally a 42 school project.
 
-It is validated by the following tests with perfect results:
+It has been validated by the following tests:
 * [libft-unit-test](https://github.com/alelievr/libft-unit-test)
 * [libftTester](https://github.com/Tripouille/libftTester)
 * [norminette v.3](https://github.com/alexandregv/norminette-action)
