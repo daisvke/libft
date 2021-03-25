@@ -6,7 +6,7 @@
 /*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/20 19:46:04 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/25 00:04:42 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/03/25 16:39:36 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	int		i;
 
 	if (!s)
-		return (calloc(1, sizeof(*p)));
+		return (malloc(0));
 	p = malloc(ft_strlen(s) + 1 * sizeof(*p));
 	if (!p)
 		return (0);
