@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/21 18:55:32 by dtanigaw          #+#    #+#             */
 /*   Updated: 2021/03/21 19:24:39 by dtanigaw         ###   ########.fr       */

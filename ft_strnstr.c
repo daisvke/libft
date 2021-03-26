@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/17 15:27:34 by dtanigaw          #+#    #+#             */
 /*   Updated: 2021/03/23 17:55:58 by dtanigaw         ###   ########.fr       */

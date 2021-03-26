@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/09 22:35:26 by dtanigaw          #+#    #+#             */
 /*   Updated: 2021/03/15 22:57:23 by dtanigaw         ###   ########.fr       */

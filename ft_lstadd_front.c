@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dtanigaw <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/21 16:45:17 by dtanigaw          #+#    #+#             */
 /*   Updated: 2021/03/21 19:55:36 by dtanigaw         ###   ########.fr       */
