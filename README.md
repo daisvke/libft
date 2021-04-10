@@ -8,7 +8,7 @@ It has been validated by the following tests:<br />
 * [libftTester](https://github.com/Tripouille/libftTester)
 * [norminette v.3](https://github.com/alexandregv/norminette-action)
 
-(Concerning the libft-unit-test, ft_isalnum, ft_toupper and ft_tolower won't be validated<br />
+(Concerning the libft-unit-test: ft_isalnum, ft_toupper and ft_tolower may not be validated<br />
 if you are on a Linux system.)
 
 <p align="center">
