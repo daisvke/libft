@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/12 15:07:29 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/04/13 20:16:52 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/04/16 20:05:23 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static void	ft_usebase(int nbr, char *base, int size)
 
 static int	ft_checkbase(char *base)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (base[i])
@@ -47,7 +47,7 @@ static int	ft_checkbase(char *base)
 
 void	ft_putnbr_base(int nbr, char *base)
 {
-	int size;
+	int	size;
 
 	if (ft_checkbase(base))
 	{
