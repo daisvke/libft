@@ -8,6 +8,9 @@ It has been validated by the following tests:<br />
 * [libftTester](https://github.com/Tripouille/libftTester)
 * [norminette v.3](https://github.com/alexandregv/norminette-action)
 
+(Concerning the libft-unit-test: ft_isalnum, ft_toupper and ft_tolower may not be validated<br />
+if you are on a Linux system.)
+
 <p align="center">
         <img src="/screenshots/libfttester.png" width="48%" />
         <img src="/screenshots/libft-unit-test.png" width="48%" />
@@ -70,7 +73,12 @@ It has been validated by the following tests:<br />
 
 ## Personal functions
 
+* [ft_abs](ft_abs.c)
 * [ft_intlen](ft_intlen.c)
 * [ft_isws](ft_isws.c)
+* [ft_putchar](ft_putchar.c)
+* [ft_putnbr](ft_putnbr.c)
+* [ft_putnbr_base](ft_putnbr_base.c)
+* [ft_putstr](ft_putstr.c)
 * [ft_strsdup](ft_strsdup.c)
 * [ft_wc](ft_wc.c)
