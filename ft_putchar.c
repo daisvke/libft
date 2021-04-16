@@ -1,29 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wc.c                                            :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/20 01:30:54 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/04/13 17:25:23 by dtanigaw         ###   ########.fr       */
+/*   Created: 2021/04/11 15:09:03 by dtanigaw          #+#    #+#             */
+/*   Updated: 2021/04/11 17:09:24 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_wc(char *s, int sep)
-{
-	int	wc;
+#include "libft.h"
 
-	wc = 0;
-	while (*s)
-	{
-		while (*s == (char)sep)
-			s++;
-		if (!*s)
-			break ;
-		while (*s != (char)sep && *s)
-			s++;
-		wc++;
-	}
-	return (wc);
+void	ft_putchar(int c)
+{
+	write(1, &c, 1);
 }

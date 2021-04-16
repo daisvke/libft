@@ -4,6 +4,7 @@ SOCC	= gcc -c
 CFLAGS	= -Wall -Wextra -Werror
 LIB		= ar rcs
 SRC		= ft_atoi.c \
+			ft_abs.c \
 			ft_bzero.c \
 			ft_calloc.c \
 			ft_intlen.c \
@@ -20,9 +21,13 @@ SRC		= ft_atoi.c \
 			ft_memcpy.c \
 			ft_memmove.c \
 			ft_memset.c \
+			ft_putchar.c \
 			ft_putchar_fd.c \
 			ft_putendl_fd.c \
+			ft_putnbr.c \
+			ft_putnbr_base.c \
 			ft_putnbr_fd.c \
+			ft_putstr.c \
 			ft_putstr_fd.c \
 			ft_split.c \
 			ft_strchr.c \
@@ -57,16 +62,16 @@ RM		= rm -f
 all: $(EXEC) bonus
 
 $(EXEC): $(OBJ)
-	$(CC) $(CFLAGS) -c $(SRC) libft.h
-	$(LIB) $(EXEC) $(OBJ) libft.h
+	$(CC) $(CFLAGS) -c $(SRC)
+	$(LIB) $(EXEC) $(OBJ)
 
 bonus: $(BOBJ)
-	$(CC) $(CFLAGS) -c $(BSRC) libft.h
+	$(CC) $(CFLAGS) -c $(BSRC)
 	$(LIB) $(EXEC) $(BOBJ)
 
-#so:
-#	$(SOCC) -fPIC $(CFLAGS) $(SRC) $(BSRC)
-#	gcc -shared -o libft.so $(OBJ) $(BOBJ)
+so:
+	$(SOCC) -fPIC $(CFLAGS) $(SRC) $(BSRC)
+	gcc -shared -o libft.so $(OBJ) $(BOBJ)
 
 clean: 
 	$(RM) $(OBJ) $(BOBJ)

@@ -1,29 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wc.c                                            :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/20 01:30:54 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/04/13 17:25:23 by dtanigaw         ###   ########.fr       */
+/*   Created: 2021/04/11 15:07:30 by dtanigaw          #+#    #+#             */
+/*   Updated: 2021/04/16 18:31:18 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_wc(char *s, int sep)
-{
-	int	wc;
+#include "libft.h"
 
-	wc = 0;
-	while (*s)
+void	ft_putnbr(int nb)
+{
+	if (nb == -2147483648)
+		write(1, "-2147483648", 11);
+	else
 	{
-		while (*s == (char)sep)
-			s++;
-		if (!*s)
-			break ;
-		while (*s != (char)sep && *s)
-			s++;
-		wc++;
+		if (nb < 0)
+		{
+			write(1, "-", 1);
+			nb = -nb;
+		}
+		if (nb < 10)
+			ft_putchar(nb + '0');
+		else if (nb > 9)
+		{
+			ft_putnbr(nb / 10);
+			ft_putnbr(nb % 10);
+		}
 	}
-	return (wc);
 }
