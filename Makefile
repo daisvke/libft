@@ -47,7 +47,7 @@ SRC		= 	ft_atoi.c \
 			ft_toupper.c \
 			ft_wc.c
 OBJ		= $(SRC:.c=.o)
-BSRC	= ft_lstadd_back.c \
+BSRC	= 	ft_lstadd_back.c \
 			ft_lstadd_front.c \
 			ft_lstclear.c \
 			ft_lstdelone.c \
