@@ -76,7 +76,7 @@ $(EXEC): $(OBJ)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@mkdir -p obj
-	$(CC) $< -o $@
+	@$(CC) $< -o $@
 
 bonus: $(BOBJ)
 	$(LIB) $(EXEC) $(BOBJ)
@@ -89,7 +89,7 @@ so: $(SOBJ)
 
 $(SOBJ_DIR)%.o: $(SSRC_DIR)%.c
 	@mkdir -p sobj
-	$(CC) -fPIC $< -o $@
+	@$(CC) -fPIC $< -o $@
 
 clean: 
 	$(RM) $(OBJ_DIR) $(SOBJ_DIR)
