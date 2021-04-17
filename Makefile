@@ -1,9 +1,8 @@
 EXEC		=	libft.a
-
 CC			=	gcc $(CFLAGS)
 CFLAGS		=	-Wall -Wextra -Werror -c
-
 LIB			=	ar rcs
+RM			=	rm -rf
 
 SRC			=	ft_atoi.c \
 				ft_abs.c \
@@ -70,8 +69,6 @@ SOBJ_DIR	=	sobj/
 SOBJ_FILES	=	$(SSRC:.c=.o)
 SOBJ		=	$(addprefix $(SOBJ_DIR), $(SOBJ_FILES))
 
-RM			=	rm -rf
-
 all: $(EXEC) bonus
 
 $(EXEC): $(OBJ)
@@ -95,7 +92,7 @@ $(SOBJ_DIR)%.o: $(SSRC_DIR)%.c
 	$(CC) -fPIC $< -o $@
 
 clean: 
-	$(RM) $(OBJ_DIR) $(BOBJ_DIR)
+	$(RM) $(OBJ_DIR) $(SOBJ_DIR)
 
 fclean: clean
 	$(RM) $(EXEC)
