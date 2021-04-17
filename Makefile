@@ -3,7 +3,7 @@ CC		= gcc
 SOCC	= gcc -c
 CFLAGS	= -Wall -Wextra -Werror
 LIB		= ar rcs
-SRC		= ft_atoi.c \
+SRC		= 	ft_atoi.c \
 			ft_abs.c \
 			ft_bzero.c \
 			ft_calloc.c \
