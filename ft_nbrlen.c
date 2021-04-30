@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intlen.c                                        :+:      :+:    :+:   */
+/*   ft_nbrlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/20 18:27:51 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/23 20:35:55 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/04/30 03:21:00 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_intlen(long n)
+int	ft_nbrlen(long long int n)
 {
 	int	len;
 
@@ -20,7 +20,7 @@ int	ft_intlen(long n)
 	if (n < 0)
 	{
 		n = -n;
-		len = ft_intlen(n) + 1;
+		len = ft_nbrlen(n) + 1;
 	}
 	else
 	{

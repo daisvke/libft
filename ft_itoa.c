@@ -19,7 +19,7 @@ char	*ft_itoa(int n)
 	long	nb;
 
 	nb = n;
-	len = ft_intlen(nb);
+	len = ft_nbrlen(nb);
 	res = malloc(sizeof(*res) * (len + 1));
 	if (!res)
 		return (0);

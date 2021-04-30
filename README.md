@@ -74,7 +74,7 @@ if you are on a Linux system.)
 ## Personal functions
 
 * [ft_abs](ft_abs.c)
-* [ft_intlen](ft_intlen.c)
+* [ft_nbrlen](ft_nbrlen.c)
 * [ft_isws](ft_isws.c)
 * [ft_putchar](ft_putchar.c)
 * [ft_putnbr](ft_putnbr.c)
