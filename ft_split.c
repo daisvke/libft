@@ -6,13 +6,13 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 17:41:27 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/25 16:40:32 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/05/21 01:05:19 by alien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_split_iter(char** split, char *s, char c)
+static int	ft_split_iter(char **split, char *s, char c)
 {
 	int		i;
 	char	*start;
