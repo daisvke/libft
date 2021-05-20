@@ -8,7 +8,7 @@ SRC			=	ft_atoi.c \
 				ft_abs.c \
 				ft_bzero.c \
 				ft_calloc.c \
-				ft_nbrlen.c \
+				ft_tabfree.c \
 				ft_isalnum.c \
 				ft_isalpha.c \
 				ft_isascii.c \
@@ -22,6 +22,7 @@ SRC			=	ft_atoi.c \
 				ft_memcpy.c \
 				ft_memmove.c \
 				ft_memset.c \
+				ft_nbrlen.c \
 				ft_putchar.c \
 				ft_putchar_fd.c \
 				ft_putendl_fd.c \
@@ -47,7 +48,7 @@ SRC			=	ft_atoi.c \
 				ft_substr.c \
 				ft_tolower.c \
 				ft_toupper.c \
-				ft_wc.c
+				ft_wordcount.c
 OBJ_DIR		=	obj/
 OBJ_FILES	=	$(SRC:.c=.o)
 OBJ			=	$(addprefix $(OBJ_DIR), $(OBJ_FILES))

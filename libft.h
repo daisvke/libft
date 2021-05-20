@@ -27,7 +27,7 @@ int		ft_atoi(const char *str);
 long	ft_abs(long n);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
-int		ft_nbrlen(long long int n);
+void    ft_tabfree(char **t, size_t size);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -50,6 +50,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
+int		ft_nbrlen(long long int n);
 void	ft_putchar(int c);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
@@ -75,6 +76,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
-int		ft_wc(char *s, int sep);
+int		ft_wordcount(char *s, int sep);
 
 #endif

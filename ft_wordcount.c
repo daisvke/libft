@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_wordcount.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/20 01:40:21 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/25 00:00:56 by dtanigaw         ###   ########.fr       */
+/*   Created: 2021/03/20 01:30:54 by dtanigaw          #+#    #+#             */
+/*   Updated: 2021/04/13 17:25:23 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_itoa(int n)
+int	ft_wordcount(char *s, int sep)
 {
-	char	*res;
-	int		len;
-	long	nb;
+	int	wc;
 
-	nb = n;
-	len = ft_nbrlen(nb);
-	res = malloc(sizeof(*res) * (len + 1));
-	if (!res)
-		return (NULL);
-	res[len] = 0;
-	if (nb < 0)
-		nb = -nb;
-	while (len--)
+	wc = 0;
+	while (*s)
 	{
-		res[len] = nb % 10 + '0';
-		nb /= 10;
+		while (*s == (char)sep)
+			s++;
+		if (!*s)
+			break ;
+		while (*s != (char)sep && *s)
+			s++;
+		wc++;
 	}
-	if (n < 0)
-		res[0] = '-';
-	return (res);
+	return (wc);
 }

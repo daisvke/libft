@@ -12,5 +12,5 @@
 
 int	ft_isws(int c)
 {
-	return (c == 32 || (c >= 9 && c <= 13));
+	return (c == ' ' || (c >= '\t' && c <= '\r'));
 }

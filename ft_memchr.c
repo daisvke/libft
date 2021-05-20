@@ -17,7 +17,7 @@ void	*ft_memchr(const void *ptr, int c, size_t n)
 	unsigned char	*s;
 
 	if (!c && !n)
-		return (0);
+		return (NULL);
 	s = (unsigned char *)ptr;
 	while (n--)
 	{
@@ -25,5 +25,5 @@ void	*ft_memchr(const void *ptr, int c, size_t n)
 			return (s);
 		s++;
 	}
-	return (0);
+	return (NULL);
 }

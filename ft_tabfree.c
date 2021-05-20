@@ -1,29 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wc.c                                            :+:      :+:    :+:   */
+/*   tabfree.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/03/20 01:30:54 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/04/13 17:25:23 by dtanigaw         ###   ########.fr       */
+/*   Created: 2021/05/20 23:23:09 by dtanigaw          #+#    #+#             */
+/*   Updated: 2021/05/20 23:27:47 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_wc(char *s, int sep)
-{
-	int	wc;
+#include "libft.h"
 
-	wc = 0;
-	while (*s)
-	{
-		while (*s == (char)sep)
-			s++;
-		if (!*s)
-			break ;
-		while (*s != (char)sep && *s)
-			s++;
-		wc++;
-	}
-	return (wc);
+void	ft_tabfree(char **t, size_t size)
+{
+	size_t	i;
+
+	i = 0;
+	while (i < size)
+		free(t[i]);
+	free(t);
 }

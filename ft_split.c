@@ -12,17 +12,11 @@
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+static int	ft_split_iter(char** split, char *s, char c)
 {
-	char	**split;
-	char	*start;
 	int		i;
+	char	*start;
 
-	if (!s)
-		return (malloc(0));
-	split = malloc(sizeof(*split) * (ft_wc((char *)s, c) + 1));
-	if (!split)
-		return (0);
 	i = 0;
 	while (*s)
 	{
@@ -30,12 +24,33 @@ char	**ft_split(char const *s, char c)
 			s++;
 		if (!*s)
 			break ;
-		start = (char *)s;
+		start = s;
 		while (*s != c && *s)
 			s++;
-		split[i] = ft_strsdup((char *)start, s - start);
+		split[i] = ft_strsdup(start, s - start);
+		if (!split[i])
+		{
+			ft_tabfree(split, i);
+			return (-1);
+		}
 		i++;
 	}
-	split[i] = 0;
+	split[i] = '\0';
+	return (0);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	int		res;
+	char	**split;
+
+	if (!s)
+		return (malloc(0));
+	split = malloc(sizeof(*split) * (ft_wordcount((char *)s, c) + 1));
+	if (!split)
+		return (NULL);
+	res = ft_split_iter(split, (char *)s, c);
+	if (res < 0)
+		return (NULL);
 	return (split);
 }
