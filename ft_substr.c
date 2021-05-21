@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 01:09:08 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/25 22:46:54 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/05/21 01:15:17 by alien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		size++;
 	p = ft_strsdup((char *)&s[start], size);
 	if (!p)
-		return (0);
+		return (NULL);
 	return (p);
 }

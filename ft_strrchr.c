@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/06 21:24:35 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/07 00:05:09 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/05/21 01:12:27 by alien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 	{
 		if (s[i] == (char)c)
 			return ((char *)s + i);
-		i--;
+		--i;
 	}
-	return (0);
+	return (NULL);
 }

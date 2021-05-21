@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 11:29:51 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/25 16:45:45 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/05/21 01:14:36 by alien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,11 +30,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = end - start + 1;
 	if (len < 0)
 		len = 0;
-	p = malloc(sizeof(*p) * (len + 1));
+	p = (char *)malloc(sizeof(*p) * (len + 1));
 	if (!p)
 		return (malloc(0));
 	while (s1[start] && start <= end)
 		*p++ = s1[start++];
-	*p = 0;
+	*p = '\0';
 	return (p - len);
 }

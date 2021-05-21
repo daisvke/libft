@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/17 15:27:34 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/23 17:55:58 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/05/21 01:11:58 by alien            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,5 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 			i++;
 		}
 	}
-	return (0);
+	return (NULL);
 }
