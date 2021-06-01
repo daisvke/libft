@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/20 19:46:04 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/05/21 01:11:12 by alien            ###   ########.fr       */
+/*   Updated: 2021/06/01 02:23:22 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		p[i] = (*f)(i, (char)(s[i]));
 		i++;
 	}
-	p[ft_strlen(s)] = 0;
+	p[ft_strlen(s)] = '\0';
 	return (p);
 }
