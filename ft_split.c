@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/19 17:41:27 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/05/21 01:22:43 by alien            ###   ########.fr       */
+/*   Updated: 2021/05/22 18:35:29 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ static int	ft_split_iter(char **split, char *s, char c)
 		}
 		i++;
 	}
-	split[i] = '\0';
+	split[i] = 0;
 	return (0);
 }
 

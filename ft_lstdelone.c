@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/21 20:27:07 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/03/23 20:30:03 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/06/01 01:59:40 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if (lst && lst->content && del)
-		(*del)(lst->content);
-	(*del)(lst);
+	if (!lst || !(lst->content) || !del)
+		return ;
+	(*del)(lst->content);
+	free(lst);
 }

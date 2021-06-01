@@ -74,20 +74,20 @@ SOBJ		=	$(addprefix $(SOBJ_DIR), $(SOBJ_FILES))
 all: $(EXEC) bonus
 
 $(EXEC): $(OBJ)
-	$(LIB) $(EXEC) $(OBJ)
+	@$(LIB) $(EXEC) $(OBJ)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@mkdir -p obj
 	@$(CC) $< -o $@
 
 bonus: $(BOBJ)
-	$(LIB) $(EXEC) $(BOBJ)
+	@$(LIB) $(EXEC) $(BOBJ)
 
 $(BOBJ_DIR)%.o: $(BSRC_DIR)%.c
-	$(CC) $< -o $@
+	@$(CC) $< -o $@
 
 so: $(SOBJ)
-	gcc -shared -o libft.so $(SOBJ)
+	@gcc -shared -o libft.so $(SOBJ)
 
 $(SOBJ_DIR)%.o: $(SSRC_DIR)%.c
 	@mkdir -p sobj
@@ -97,7 +97,7 @@ clean:
 	$(RM) $(OBJ_DIR) $(SOBJ_DIR)
 
 fclean: clean
-	$(RM) $(EXEC)
+	$(RM) $(EXEC) libft.so
 
 re: fclean all
 
