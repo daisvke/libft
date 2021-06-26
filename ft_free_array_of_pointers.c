@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_free_array.c                                    :+:      :+:    :+:   */
+/*   ft_free_array_of_pointers.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 23:23:09 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/06/26 13:11:32 by root             ###   ########.fr       */
+/*   Updated: 2021/06/27 01:17:37 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_free_array(char **array, size_t arr_size)
+void	ft_free_array_of_pointers(char **array_of_pointers, size_t arr_size)
 {
-	size_t	i;
+	size_t	pointer;
 
-	i = 0;
+	pointer = 0;
 	while (i < arr_size)
 	{
-		free(array[i]);
-		++i;
+		free(array_of_pointers[pointer]);
+		++pointer;
 	}
-	free(array);
-	array = NULL;
+	free(array_of_pointers);
+	array_of_pointers = NULL;
 }
