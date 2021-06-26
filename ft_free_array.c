@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tabfree.c                                       :+:      :+:    :+:   */
+/*   ft_free_tab.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/20 23:23:09 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/06/26 12:42:43 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/06/26 12:53:43 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_tabfree(char **t, size_t size)
+void	ft_free_array(char **array, size_t arr_size)
 {
 	size_t	i;
 
 	i = 0;
-	while (i < size)
+	while (i < arr_size)
 	{
-		free(t[i]);
+		free(array[i]);
 		++i;
 	}
-	free(t);
+	free(array);
+	array = NULL;
 }
