@@ -3,18 +3,6 @@
 libft is a set of functions including an implementation of some of the C standard library functions,<br />
 personal functions, and some additional functions.<br />
 This was originally a 42 school project.<br /><br />
-It has been validated by the following tests:<br />
-* [libft-unit-test](https://github.com/alelievr/libft-unit-test)
-* [libftTester](https://github.com/Tripouille/libftTester)
-* [norminette v.3](https://github.com/alexandregv/norminette-action)
-
-(Concerning the libft-unit-test: ft_isalnum, ft_toupper and ft_tolower may not be validated<br />
-if you are on a Linux system.)
-
-<p align="center">
-        <img src="/screenshots/libfttester.png" width="48%" />
-        <img src="/screenshots/libft-unit-test.png" width="48%" />
-</p>
 
 ## libc implementation
 
@@ -83,3 +71,16 @@ if you are on a Linux system.)
 * [ft_strsdup](ft_strsdup.c)
 * [ft_wordcount](ft_wordcount.c)
 * [ft_free_array](ft_free_array.c)
+<br /><br />
+This project has been validated by the following tests:<br />
+* [libft-unit-test](https://github.com/alelievr/libft-unit-test)
+* [libftTester](https://github.com/Tripouille/libftTester)
+* [norminette v.3](https://github.com/alexandregv/norminette-action)
+
+(Concerning the libft-unit-test: ft_isalnum, ft_toupper and ft_tolower may not be validated<br />
+if you are on a Linux system.)
+
+<p align="center">
+        <img src="/screenshots/libfttester.png" width="48%" />
+        <img src="/screenshots/libft-unit-test.png" width="48%" />
+</p>
