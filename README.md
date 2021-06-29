@@ -71,7 +71,8 @@ This was originally a 42 school project.<br /><br />
 * [ft_strsdup](ft_strsdup.c)
 * [ft_wordcount](ft_wordcount.c)
 * [ft_free_array](ft_free_array.c)
-<br /><br />
+
+## Validation
 
 This project has been validated by the following tests:<br />
 * [libft-unit-test](https://github.com/alelievr/libft-unit-test)
