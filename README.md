@@ -36,6 +36,7 @@ This was originally a 42 school project.<br /><br />
 
 ## Additional functions
 
+* [get_next_line](get_next_line.c)
 * [ft_itoa](ft_itoa.c)
 * [ft_putchar_fd](ft_putchar_fd.c)
 * [ft_putendl_fd](ft_putendl_fd.c)
