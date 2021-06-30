@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 15:30:09 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/06/30 16:53:47 by root             ###   ########.fr       */
+/*   Updated: 2021/06/30 23:30:45 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,8 @@ void	ft_join(char **line, char **s1, char *s2)
 
 	tmp_s1 = *s1;
 	tmp_s2 = s2;
-	str = (char *)malloc(sizeof(*str) * (ft_gnl_strlen(*s1) + ft_gnl_strlen(s2) + 1));
+	str = (char *)malloc(sizeof(*str) * (ft_gnl_strlen(*s1) \
+		+ ft_gnl_strlen(s2) + 1));
 	if (!str)
 		*line = NULL;
 	i = 0;
