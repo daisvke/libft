@@ -1,4 +1,4 @@
-EXEC		=	libft.a
+NAME		=	libft.a
 CC			=	gcc $(CFLAGS)
 CFLAGS		=	-Wall -Wextra -Werror -c
 LIB			=	ar rcs
@@ -48,11 +48,15 @@ SRC			=	ft_atoi.c \
 				ft_substr.c \
 				ft_tolower.c \
 				ft_toupper.c \
-				ft_wordcount.c
+				ft_wordcount.c \
+				get_next_line.c \
+				get_next_line_utils.c
+
 OBJ_DIR		=	obj/
 OBJ_FILES	=	$(SRC:.c=.o)
 OBJ			=	$(addprefix $(OBJ_DIR), $(OBJ_FILES))
 
+# BONUS
 BSRC		= 	ft_lstadd_back.c \
 				ft_lstadd_front.c \
 				ft_lstclear.c \
@@ -65,23 +69,23 @@ BSRC		= 	ft_lstadd_back.c \
 BOBJ_FILES	=	$(BSRC:.c=.o)
 BOBJ		=	$(addprefix $(OBJ_DIR), $(BOBJ_FILES))
 
-# For so target
+# SO
 SSRC		=	$(SRC) $(BSRC)
 SOBJ_DIR	=	sobj/
 SOBJ_FILES	=	$(SSRC:.c=.o)
 SOBJ		=	$(addprefix $(SOBJ_DIR), $(SOBJ_FILES))
 
-all: $(EXEC) bonus
+all: $(NAME) bonus
 
-$(EXEC): $(OBJ)
-	@$(LIB) $(EXEC) $(OBJ)
+$(NAME): $(OBJ)
+	@$(LIB) $(NAME) $(OBJ)
 
 $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 	@mkdir -p obj
 	@$(CC) $< -o $@
 
 bonus: $(BOBJ)
-	@$(LIB) $(EXEC) $(BOBJ)
+	@$(LIB) $(NAME) $(BOBJ)
 
 $(BOBJ_DIR)%.o: $(BSRC_DIR)%.c
 	@$(CC) $< -o $@
@@ -97,7 +101,7 @@ clean:
 	$(RM) $(OBJ_DIR) $(SOBJ_DIR)
 
 fclean: clean
-	$(RM) $(EXEC) libft.so
+	$(RM) $(NAME) libft.so
 
 re: fclean all
 

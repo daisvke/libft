@@ -6,12 +6,21 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 15:23:44 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/06/27 01:21:31 by dtanigaw         ###   ########.fr       */
+/*   Updated: 2021/06/30 16:51:07 by root             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 32
+# endif
+
+# define ERROR -1
+# define ERROR2 -2
+# define REACHED_EOF 0
+# define LINE_READ 1
 
 # include <stddef.h>
 # include <stdlib.h>
@@ -77,5 +86,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_wordcount(char *s, int sep);
+
+/*
+** gnl
+*/
+int		ft_gnl_bzero(char *s, size_t n);
+int		ft_gnl_strchr(char *s, char c);
+size_t	ft_gnl_strlen(char *s);
+char	*ft_gnl_substr(char *s, size_t start, size_t len);
+int		get_next_line(int fd, char **line);
 
 #endif
