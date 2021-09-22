@@ -6,7 +6,7 @@
 /*   By: dtanigaw <dtanigaw@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/26 15:23:44 by dtanigaw          #+#    #+#             */
-/*   Updated: 2021/06/30 16:51:07 by root             ###   ########.fr       */
+/*   Updated: 2021/09/22 03:55:55 by dtanigaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,23 +14,42 @@
 # define LIBFT_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 32
+#  define BUFFER_SIZE 	32
 # endif
 
-# define ERROR -1
-# define ERROR2 -2
-# define REACHED_EOF 0
-# define LINE_READ 1
+# define NOT_FOUND		0
+# define OFF			-1
 
-# include <stddef.h>
+/*
+** return values
+*/
+# define ERROR 			-1
+# define REACHED_EOF 	0
+# define LINE_READ		1
+
+# include <stdbool.h>
 # include <stdlib.h>
 # include <unistd.h>
 
+/*
+** lst* functions
+*/
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }				t_list;
+
+/*
+** get_next_line
+*/
+typedef struct s_gnl
+{
+	int				fd;
+	char			*content;
+	char			buffer[BUFFER_SIZE + 1];
+	struct s_gnl	*next;
+}					t_gnl;
 
 int		ft_atoi(const char *str);
 long	ft_abs(long n);
@@ -86,14 +105,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_wordcount(char *s, int sep);
-
-/*
-** gnl
-*/
-int		ft_gnl_bzero(char *s, size_t n);
-int		ft_gnl_strchr(char *s, char c);
-size_t	ft_gnl_strlen(char *s);
-char	*ft_gnl_substr(char *s, size_t start, size_t len);
 int		get_next_line(int fd, char **line);
 
 #endif

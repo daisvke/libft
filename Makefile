@@ -49,8 +49,7 @@ SRC			=	ft_atoi.c \
 				ft_tolower.c \
 				ft_toupper.c \
 				ft_wordcount.c \
-				get_next_line.c \
-				get_next_line_utils.c
+				get_next_line.c
 
 OBJ_DIR		=	obj/
 OBJ_FILES	=	$(SRC:.c=.o)
