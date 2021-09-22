@@ -36,7 +36,6 @@ This was originally a 42 school project.<br /><br />
 
 ## Additional functions
 
-* [get_next_line](get_next_line.c)
 * [ft_itoa](ft_itoa.c)
 * [ft_putchar_fd](ft_putchar_fd.c)
 * [ft_putendl_fd](ft_putendl_fd.c)
@@ -47,6 +46,7 @@ This was originally a 42 school project.<br /><br />
 * [ft_strmapi](ft_strmapi.c)
 * [ft_strtrim](ft_strtrim.c)
 * [ft_substr](ft_substr.c)
+* [get_next_line](get_next_line.c)
 
 ## Linked lists implementation
 
